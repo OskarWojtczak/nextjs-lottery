@@ -19,7 +19,8 @@ export default function ManualHeader() {
     }, [isWeb3Enabled])
     // no array, run on every render
     // empty array, run once
-    // dependency array, run when the stuff in it changesan
+    // dependency array, run when the stuff in it changes
+    // In this case, wun code whenever isWeb3Enabled changes
 
     useEffect(() => {
         Moralis.onAccountChanged((newAccount) => {
